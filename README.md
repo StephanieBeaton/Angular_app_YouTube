@@ -4,8 +4,11 @@ Angular app with You Tube video
 run these commands after  $git clone
 
 bower install
+
 npm install
+
 grunt build
+
 node server.js
 
 in browser enter  "localhost:3000"
