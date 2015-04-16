@@ -2,14 +2,20 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Hello From Html</title>
+	<title></title>
 </head>
 <body data-ng-app="notesApp">
-  <main data-ng-controller="notesMainController">
-    <h1>{{greeting}}</h1>
-    <input type="text" data-ng-model="greeting">
-  </main>
+  <div data-ng-controller="YouTubeController">
 
-  <script src="bundle.js"></script>
+    <youtube width="{{yt.width}}" height="{{yt.height}}" videoid="{{yt.videoid}}">
+    </youtube>
+
+    <br/>
+    Width:<input type="text" data-ng-model="yt.width">
+    Height:<input type="text" data-ng-model="yt.height">
+    VideoId:<input type="text" data-ng-model="yt.videoid">
+  </div>
+
+	<script src="bundle.js"></script>
 </body>
 </html>
