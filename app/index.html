@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body data-ng-app="notesApp">
+  <div data-ng-controller="YouTubeController">
+
+    <youtube width="{{yt.width}}" height="{{yt.height}}" videoid="{{yt.videoid}}">
+    </youtube>
+
+    <br/>
+    Width:<input type="text" data-ng-model="yt.width">
+    Height:<input type="text" data-ng-model="yt.height">
+    VideoId:<input type="text" data-ng-model="yt.videoid">
+  </div>
+
+	<script src="bundle.js"></script>
+</body>
+</html>
